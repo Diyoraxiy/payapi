@@ -1,0 +1,61 @@
+.implement {
+
+    &_img {
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.8s ease;
+    }
+
+    &_img:hover{
+        transform: scale(1.3) rotateZ(360deg);
+    }
+
+    &_title {
+        text-align: center;
+        color: rgba(54, 83, 107, 1);
+        line-height: 36px;
+        font-size: 36px;
+        font-family: "DM Serif Display", serif;
+        margin-bottom: 24px;
+    }
+
+    &_text {
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 400;
+        color: rgba(108, 130, 148, 1);
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width:850px) {
+    .implement_block {
+        display: flex;
+        align-items: center;
+        padding-top: 150px;
+        justify-content: space-between;
+    }
+
+    .implement_img{
+        height: 384px;
+        width: 545px;
+    }
+
+    .implement_right{
+        width: 445px;
+        height: 164px;
+        // border: 1px solid red;
+    }
+
+    .implement_title{
+        text-align: start;
+        font-size: 48px;
+        line-height: 56px;
+
+    }
+
+    .implement_text{
+        text-align: start;
+    }
+}

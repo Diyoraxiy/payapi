@@ -1,0 +1,44 @@
+.service {
+    padding-top: 20px;
+
+    &_block {
+        text-align: center;
+    }
+
+    &_img {
+        margin-bottom: 33px;
+    }
+
+    &_card_title {
+        color: rgba(108, 130, 148, 1);
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    &_card_text {
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        color: rgba(108, 130, 148, 1);
+        margin-bottom: 48px;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .service_block {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .service_block {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}

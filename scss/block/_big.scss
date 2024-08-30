@@ -1,0 +1,19 @@
+@media screen and (min-width:375px) {
+    .big{
+        background-image: url(../../img/bg/Bitmap\ \(2\).png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .big{
+        background-image: url(../../img/bg/katta.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        width: 100%;
+    }
+}
+
+
