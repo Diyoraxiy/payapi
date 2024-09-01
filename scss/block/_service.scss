@@ -5,8 +5,34 @@
         text-align: center;
     }
 
+    &_card_spnan{
+        height: 100%;
+        width: 3px;
+        position: absolute;
+        transform: translateY(-100%);
+        background-color: black;
+        left: 0%;
+        transition: all 0.2s ease-in-out;
+    }
+
     &_img {
         margin-bottom: 33px;
+    }
+
+    &_card{
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        padding-left: 10px;
+        transition: all 0.2s ease;
+    }
+
+    &_card:hover{
+        transform: scale(1.1);
+    }
+
+    &_card:hover .service_card_spnan{
+        transform: translateX(100%);
     }
 
     &_card_title {
@@ -39,6 +65,6 @@
     .service_block {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
     }
 }

@@ -599,8 +599,35 @@ body {
 .service_block {
   text-align: center;
 }
+.service_card_spnan {
+  height: 100%;
+  width: 3px;
+  position: absolute;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-color: black;
+  left: 0%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 .service_img {
   margin-bottom: 33px;
+}
+.service_card {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  padding-left: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.service_card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.service_card:hover .service_card_spnan {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 .service_card_title {
   color: rgb(108, 130, 148);
@@ -636,7 +663,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 30px;
+    gap: 40px;
   }
 }
 .contact_block {
